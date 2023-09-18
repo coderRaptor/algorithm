@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 是否为素数(质数)
+    function isPrime(n) {
+        if (n == 1) {
+            return false;
+        }
+        let sqrt = Math.sqrt(n);
+        for (let i = 2; i <= sqrt; i++) {
+            if (n % i === 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+    console.log(isPrime(7));
+    </script>
+</body>
+</html>
